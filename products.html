@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kroos | Shop All Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .products-page {
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: var(--transition);
+            text-align: center;
+            padding-bottom: 2rem;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s ease;
+        }
+        .product-card:hover .product-img img {
+            transform: scale(1.08);
+        }
+        .product-info {
+            padding: 1.5rem 1.5rem 0;
+        }
+        .product-title {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+        .product-price {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 1.15rem;
+            margin-bottom: 1.2rem;
+        }
+        .add-to-cart {
+            background: none;
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 10px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        .add-to-cart:hover {
+            background: var(--primary-color);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">KROOS</div>
+        <nav class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="products.html" class="active">Shop</a>
+            <a href="index.html#services">Services</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="products-page">
+        <div class="section-title">
+            <span class="subtitle">Latest Collection</span>
+            <h2>Our Exquisite Dresses</h2>
+        </div>
+        <div class="products-grid">
+            <!-- P1 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Midnight Elegance Gown"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Midnight Elegance Gown</h3>
+                    <p class="product-price">$450.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P2 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Ivory Lace Whisper"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Ivory Lace Whisper</h3>
+                    <p class="product-price">$380.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P3 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Crimson Velvet Dream"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Crimson Velvet Dream</h3>
+                    <p class="product-price">$520.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P4 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Golden Hour Silk"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Golden Hour Silk</h3>
+                    <p class="product-price">$410.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P5 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Emerald Envy Sheath"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Emerald Envy Sheath</h3>
+                    <p class="product-price">$350.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P6 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Sapphire Starlet"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Sapphire Starlet</h3>
+                    <p class="product-price">$490.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P7 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Pearl Chiffon Maxi"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Pearl Chiffon Maxi</h3>
+                    <p class="product-price">$310.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P8 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Noir Classic Cocktail"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Noir Classic Cocktail</h3>
+                    <p class="product-price">$280.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P9 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Blush Tulip Dress"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Blush Tulip Dress</h3>
+                    <p class="product-price">$340.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P10 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Platinum Sequin Sparkle"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Platinum Sequin Sparkle</h3>
+                    <p class="product-price">$560.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P11 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Lavender Mirage"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Lavender Mirage</h3>
+                    <p class="product-price">$390.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P12 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_boutique_interior.png" alt="Rose Gold Radiance"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Rose Gold Radiance</h3>
+                    <p class="product-price">$430.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            <!-- P13 -->
+            <div class="product-card">
+                <div class="product-img"><img src="images/kroos_dress_collection.png" alt="Midnight Blue Mermaid"></div>
+                <div class="product-info">
+                    <h3 class="product-title">Midnight Blue Mermaid</h3>
+                    <p class="product-price">$600.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2 class="footer-logo">KROOS</h2>
+            <p>&copy; 2026 Kroos Dress Shop. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script>
+        // Custom animation for products on load
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.product-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s cubic-bezier(0.5, 0, 0, 1)';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 + (index * 80)); // Stagger effect
+            });
+            
+            // Add to cart interaction
+            const buttons = document.querySelectorAll('.add-to-cart');
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    let originalText = this.innerHTML;
+                    this.innerHTML = '<i class="fas fa-check"></i> Added';
+                    this.style.backgroundColor = '#2ecc71';
+                    this.style.borderColor = '#2ecc71';
+                    this.style.color = '#fff';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = originalText;
+                        this.style.backgroundColor = '';
+                        this.style.borderColor = '';
+                        this.style.color = '';
+                    }, 2000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
